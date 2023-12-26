@@ -1,0 +1,209 @@
+/* play-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_cyrillic-ext_latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic_cyrillic-ext_latin-500.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_cyrillic-ext_latin-700.woff2")
+    format("woff2");
+}
+:root {
+  --color-primary-white: #ffffff;
+  --color-primary-light-blue: #2b7fff;
+  --color-primary-dark-blue: #011c44;
+  --color-black: #000000;
+  --color-secondary-light-grey: #747272;
+  --color-secondary-dark-grey: #4a4a4a;
+  --color-secondary-dark-blue: #011f4a;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: var(--color-primary-dark-blue);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.header__menu-link {
+  color: var(--color-primary-dark-blue);
+}
+
+.header__menu-link:hover {
+  color: var(--color-primary-light-blue);
+  font-weight: 700;
+}
+
+.hero-section__title {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.hero-section__title span {
+  font-family: Play;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81%;
+  color: var(--color-primary-light-blue);
+  text-transform: capitalize;
+}
+
+.hero-section__btn {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light-blue);
+  border: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hero-section__btn-description {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-secondary-dark-grey);
+}
+
+.about-section__title,
+.advantages-section__title,
+.procedures-section__title,
+.contact-section__title {
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-section__title span {
+  color: var(--color-primary-light-blue);
+  text-transform: capitalize;
+}
+
+.about-section__text {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.about-section__text span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.advantages-section__title span,
+.procedures-section__title span,
+.contact-section__title span {
+  color: var(--color-primary-light-blue);
+}
+
+.advantages-section__text {
+  color: var(--color-black);
+  line-height: 24px;
+}
+
+.procedure-article__title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--color-primary-white);
+}
+
+.appointment-form {
+  background-color: var(--color-primary-dark-blue);
+  color: var(--color-primary-white);
+}
+
+.appointment-form__text {
+  font-style: 22px;
+  font-weight: 600;
+}
+
+.appointment-form__text span {
+  color: var(--color-primary-light-blue);
+}
+
+.appointment-form__input {
+  background: none;
+  border: 2px solid var(--color-secondary-light-grey);
+}
+
+.appointment-form__input::placeholder {
+  color: var(--color-primary-white);
+  font-size: 13px;
+}
+
+.appointment-form__btn {
+  color: var(--color-primary-white);
+  background: var(--color-primary-light-blue);
+  border: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+}
+.appointment-form__btn-description {
+  color: var(--color-secondary-light-grey);
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.btn-description__link {
+  color: var(--color-secondary-light-grey);
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: var(--color-primary-dark-blue);
+}
+
+.footer__menu-link,
+.footer__contacts-link {
+  color: var(--color-primary-white);
+  font-size: 16px;
+}
+
+.footer__contacts-link {
+  font-style: normal;
+}
+
+.footer__copy {
+  color: var(--color-secondary-light-grey);
+  font-size: 13px;
+}
