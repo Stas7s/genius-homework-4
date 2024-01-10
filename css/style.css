@@ -185,6 +185,10 @@ body {
 
 /* about-section */
 
+.about-section {
+  padding-bottom: 176px;
+}
+
 .about-section__container {
   display: flex;
 }
@@ -234,15 +238,44 @@ body {
 
 /* .advantages-section */
 
+.advantages-section {
+  padding-bottom: 96px;
+}
+
 .advantages-section__title span,
 .procedures-section__title span,
 .contact-section__title span {
   color: var(--color-primary-light-blue);
 }
 
+.advantages-section__title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
 .advantages-section__text {
   color: var(--color-black);
   line-height: 24px;
+  max-width: 252px;
+  text-align: center;
+}
+
+.advantages-section__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.advantages-section__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-primary-white);
+  border-radius: 32px;
+  padding: 24px 32px;
 }
 
 /* procedures-section */
