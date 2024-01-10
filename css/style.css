@@ -189,8 +189,10 @@ body {
   display: flex;
 }
 
+.about-section__content,
 .about-section__text {
   padding-top: 40px;
+  flex-basis: 60%;
 }
 
 .about-section__title,
@@ -202,8 +204,6 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-
-/* advantages-section */
 
 .about-section__title span {
   color: var(--color-primary-light-blue);
@@ -218,6 +218,18 @@ body {
 .about-section__text span {
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.about-section__photo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-basis: 40%;
+}
+
+.about-section__photo {
+  max-width: 327px;
+  border-radius: 327px;
 }
 
 /* .advantages-section */
