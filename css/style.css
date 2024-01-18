@@ -81,6 +81,10 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  background-image: url("../images/advantages-bg.svg");
+  background-position: top 1320px center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
@@ -135,6 +139,7 @@ body {
 /* hero-section */
 
 .hero-section {
+  padding-bottom: 126px;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,7 +185,7 @@ body {
   text-align: center;
   color: var(--color-secondary-dark-grey);
   max-width: 220px;
-  margin-bottom: 126px;
+  /* margin-bottom: 126px; */
 }
 
 /* about-section */
@@ -191,6 +196,33 @@ body {
 
 .about-section__container {
   display: flex;
+  position: relative;
+}
+
+.about-section__container::before {
+  position: absolute;
+  background-image: url("../images/Star_middle.svg");
+  background-repeat: no-repeat;
+  fill: var(--color-primary-light-blue);
+  transform: rotate(30deg);
+  width: 40px;
+  height: 40px;
+  top: 38px;
+  right: -21px;
+  content: "";
+}
+
+.about-section__container::after {
+  position: absolute;
+  background-image: url("../images/Star_big.svg");
+  background-repeat: no-repeat;
+  fill: var(--color-secondary-dark-blue);
+  transform: rotate(-30deg);
+  width: 64px;
+  height: 64px;
+  top: 347px;
+  right: 304px;
+  content: "";
 }
 
 .about-section__content,
@@ -234,12 +266,31 @@ body {
 .about-section__photo {
   max-width: 327px;
   border-radius: 327px;
+  position: relative;
+}
+
+.about-section__photo-container::after {
+  position: absolute;
+  background-image: url("../images/Star_small.svg");
+  background-repeat: no-repeat;
+  fill: var(--color-secondary-light-greydark-blue);
+  transform: rotate(-23deg);
+  width: 16px;
+  height: 16px;
+  top: 272px;
+  right: 6px;
+  content: "";
+}
+
+.about-section__photo:last-child {
+  align-self: flex-end;
 }
 
 /* .advantages-section */
 
 .advantages-section {
   padding-bottom: 96px;
+  position: relative;
 }
 
 .advantages-section__title span,
@@ -279,11 +330,69 @@ body {
 }
 
 /* procedures-section */
+.procedures-section {
+  padding-bottom: 96px;
+}
 
-.procedure-article__title {
+.procedures-section__title {
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.procedures-section__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.carousel__button {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid var(--color-primary-dark-blue);
+  background-color: transparent;
+}
+
+.carousel__list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 344px;
+  height: 456px;
+  padding: 32px 77px 32px 115px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    var(--color-primary-dark-blue) 101.39%
+  );
+  border-radius: 4px 120px;
+}
+
+.carousel-card__image {
+  position: absolute;
+  z-index: -1;
+  border-radius: 4px 120px;
+  top: 0;
+  left: 0;
+}
+
+.carousel-card__title {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  text-align: center;
   color: var(--color-primary-white);
 }
 

@@ -104,46 +104,64 @@
         <section class="procedures-section">
             <div class="container">
                 <h2 class="procedures-section__title">Наші <span>процедури</span></h2>
-                <ul>
-                    <li>
-                        <article class="procedures-section__procedure-article">
-                            <img src="images/mask.jpg" alt="Girl gets a face mask">
-                            <h3 class="procedure-article__title">Маски для обличчя</h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="procedures-section__procedure-article">
-                            <img src="images/injection.jpg" alt="Girl with dark skin gets a facial injection">
-                            <h3 class="procedure-article__title">Ін'єкції для обличчя</h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="procedures-section__procedure-article">
-                            <img src="images/pilling.jpg" alt="Girl gets facial peeling">
-                            <h3 class="procedure-article__title">Очищення обличчя</h3>
-                        </article>
-                    </li>
-                </ul>
+                <div class="procedures-section__carousel">
+                    <button class="carousel__button" type="button">
+                        <svg width="18" height="15">
+                            <use href="./images/Arrow.svg"></use>
+                        </svg>
+                    </button>
+                    <ul class="carousel__list">
+                        <li class="carousel__item">
+                            <article class="carousel-card">
+                                <img class="carousel-card__image" src="images/mask.jpg" alt="Girl gets a face mask">
+                                <h3 class="carousel-card__title">Маски для обличчя</h3>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="carousel-card">
+                                <img class="carousel-card__image" src="images/injection.jpg"
+                                    alt="Girl with dark skin gets a facial injection">
+                                <h3 class="carousel-card__title">Ін'єкції <br> для обличчя</h3>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="carousel-card">
+                                <img class="carousel-card__image" src="images/pilling.jpg"
+                                    alt="Girl gets facial peeling">
+                                <h3 class="carousel-card__title">Очищення обличчя</h3>
+                            </article>
+                        </li>
+                    </ul>
+                    <button class="carousel__button" type="button">
+                        <svg width="18" height="15">
+                            <use href="images/Arrow.svg"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="contact-section">
             <div class="container">
                 <h2 class="contact-section__title">Як нас <span>знайти</span></h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1703418470309!5m2!1sru!2sua"
-                    width="605" height="482" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <form class="appointment-form" method="post" action="input">
-                    <p class="appointment-form__text">Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
-                    <input class="appointment-form__input" type="text" name="name" placeholder="Ваше ім'я та прізвище">
-                    <input class="appointment-form__input" type="tel" name="tel" placeholder="Ваш номер телефону">
-                    <input class="appointment-form__input" type="email" name="email"
-                        placeholder="Ваша електронна пошта">
-                    <button class="appointment-form__btn" type="submit">Записатись безкоштовно</button>
-                    <p class="appointment-form__btn-description">Натискаючи на кнопку я погоджуюсь <a
-                            class="btn-description__link" href="#">з політикою
-                            конфіденційності</a></p>
-                </form>
+                <div class="contact-section__container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1703418470309!5m2!1sru!2sua"
+                        width="605" height="482" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <form class="appointment-form" method="post" action="input">
+                        <p class="appointment-form__text">Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
+                        <input class="appointment-form__input" type="text" name="name"
+                            placeholder="Ваше ім'я та прізвище">
+                        <input class="appointment-form__input" type="tel" name="tel" placeholder="Ваш номер телефону">
+                        <input class="appointment-form__input" type="email" name="email"
+                            placeholder="Ваша електронна пошта">
+                        <button class="appointment-form__btn" type="submit">Записатись безкоштовно</button>
+                        <p class="appointment-form__btn-description">Натискаючи на кнопку я погоджуюсь <a
+                                class="btn-description__link" href="#">з політикою
+                                конфіденційності</a></p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
