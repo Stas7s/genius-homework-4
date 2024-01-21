@@ -481,9 +481,10 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+
 .appointment-form__input {
   padding: 16px 32px;
-  background: none;
+  background-color: transparent;
   border-radius: 32px;
   border: 2px solid var(--color-secondary-light-grey);
 }
