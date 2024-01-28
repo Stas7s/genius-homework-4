@@ -74,6 +74,10 @@ p {
   margin: 0;
 }
 
+input {
+  outline: none;
+}
+
 body {
   color: var(--color-primary-dark-blue);
   font-family: "Roboto";
@@ -127,6 +131,7 @@ body {
 
 .header__menu-link {
   color: var(--color-primary-dark-blue);
+  transition: all 0.2s;
 }
 
 .header__menu-link:hover {
@@ -147,6 +152,11 @@ body {
 
 .header__social-icon {
   fill: var(--color-primary-dark-blue);
+  transition: all 0.2s;
+}
+
+.header__social-icon:hover {
+  fill: var(--color-primary-light-blue);
 }
 
 /* hero-section */
@@ -182,15 +192,22 @@ body {
 .hero-section__btn {
   color: var(--color-primary-white);
   background-color: var(--color-primary-light-blue);
-  border: none;
+  border: 2px solid var(--color-primary-light-blue);
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   margin-bottom: 14px;
-  padding: 16px 32px;
+  padding: 14px 30px;
   border-radius: 32px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hero-section__btn:hover{
+  color: var(--color-primary-dark-blue);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-light-blue);
 }
 
 .hero-section__btn-description {
@@ -377,10 +394,21 @@ body {
   border: 1px solid var(--color-primary-dark-blue);
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.carousel__button:hover {
+  border: 1px solid var(--color-primary-light-blue);
+  background-color: var(--color-primary-light-blue);
 }
 
 .carousel__button svg {
   fill: var(--color-primary-dark-blue);
+  transition: all 0.2s;
+}
+
+.carousel__button:hover svg {
+  fill: var(--color-primary-white);
 }
 
 .carousel__button-next {
@@ -489,6 +517,11 @@ body {
   border: 2px solid var(--color-secondary-light-grey);
 }
 
+.appointment-form__input:focus {
+  background-color: var(--color-secondary-light-grey);
+  color: var(--color-primary-white);
+}
+
 .appointment-form__input::placeholder {
   color: var(--color-primary-white);
   font-size: 13px;
@@ -504,14 +537,22 @@ body {
 .appointment-form__btn {
   color: var(--color-primary-white);
   background: var(--color-primary-light-blue);
-  padding: 16px 32px;
+  padding: 14px 30px;
   border-radius: 32px;
-  border: none;
+  border: 2px solid var(--color-primary-light-blue);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s;
 }
+
+.appointment-form__btn:hover {
+  color: var(--color-primary-light-blue);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-light-blue);
+}
+
 .appointment-form__btn-description {
   color: var(--color-secondary-light-grey);
   font-size: 12px;
@@ -561,10 +602,16 @@ body {
 .footer__contacts-link {
   color: var(--color-primary-white);
   font-size: 16px;
+  transition: all 0.2s;
 }
 
 .footer__contacts-link {
   font-style: normal;
+}
+
+.footer__menu-link:hover,
+.footer__contacts-link:hover {
+  color: var(--color-primary-light-blue);
 }
 
 .footer__social-list {
@@ -575,6 +622,11 @@ body {
 
 .footer__social-icon {
   fill: var(--color-primary-white);
+  transition: all 0.2s;
+}
+
+.footer__social-icon:hover {
+  fill: var(--color-primary-light-blue);
 }
 
 .footer__copy {
