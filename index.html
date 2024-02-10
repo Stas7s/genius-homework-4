@@ -87,7 +87,7 @@
         <section class="advantages-section">
             <div class="container">
                 <h2 class="advantages-section__title">Чому люди<br><span>обирають нас</span></h2>
-                <ul class="advantages-section__list">
+                <ul class="advantages-section__list">s
                     <li class="advantages-section__item">
                         <svg class="advantages__icon" width="48" height="48">
                             <use href="./images/icons.svg#icon-science"></use>
@@ -150,7 +150,7 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </div>form
         </section>
         <section class="contact-section">
             <div class="container">
@@ -165,17 +165,32 @@
                         <h3 class="appointment-form__title">Запишіться <span>безкоштовно</span> та отримайте подарунок
                         </h3>
                         <div class="form-input__container">
-                            <input class="appointment-form__input" type="text" name="name"
-                                placeholder="Ваше ім'я та прізвище">
-                            <input class="appointment-form__input" type="tel" name="tel"
-                                placeholder="Ваш номер телефону">
-                            <input class="appointment-form__input" type="email" name="email"
-                                placeholder="Ваша електронна пошта">
+                            <div class="appointmet-form__input">
+                                <label class="input__label visually-hidden" for="user-name">Ім'я та прізвище</label>
+                                <input class="input__field" id="user-name" type="text" name="name"
+                                    placeholder="Ваше ім'я та прізвище" required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+                            </div>
+                            <div class="appointmet-form__input">
+                                <label class="input__label visually-hidden" for="user-tel">Телефон</label>
+                                <input class="input__field" id="user-tel" type="tel" name="tel"
+                                    placeholder="Ваш номер телефону" required pattern="^\+[0-9]{12}">
+                            </div>
+                            <div class="appointmet-form__input">
+                                <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
+                                <input class="input__field" id="user-email" type="email" name="email"
+                                    placeholder="Ваша електронна пошта" required>
+                            </div>
+                            <!-- <input class="input__field" type="text" name="name"
+                                placeholder="Ваше ім'я та прізвище" required>
+                            <input class="input__field" type="tel" name="tel"
+                                placeholder="Ваш номер телефону" required pattern="^\+[0-9]{12}">
+                            <input class="input__field" type="email" name="email"
+                                placeholder="Ваша електронна пошта" required>-->
                             <div class="form-button__container">
                                 <button class="appointment-form__btn" type="submit">Записатись безкоштовно</button>
-                                <p class="appointment-form__btn-description">Натискаючи на кнопку я погоджуюсь <a
-                                        class="btn-description__link" href="#">з політикою
-                                        конфіденційності</a></p>
+                                <p class="appointment-form__btn-description">Натискаючи на кнопку я погоджуюсь
+                                    <a class="btn-description__link" href="#">з політикою конфіденційності</a>
+                                </p>
                             </div>
                         </div>
                     </form>
