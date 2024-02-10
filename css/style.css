@@ -150,12 +150,6 @@ body {
   height: 32px;
 }
 
-.modal-form__btn-open {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
 .header__social-icon {
   fill: var(--color-primary-dark-blue);
   transition: all 0.2s;
