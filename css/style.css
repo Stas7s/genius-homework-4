@@ -150,6 +150,12 @@ body {
   height: 32px;
 }
 
+.modal-form__btn-open {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 .header__social-icon {
   fill: var(--color-primary-dark-blue);
   transition: all 0.2s;
@@ -286,7 +292,8 @@ body {
 .about-section__title,
 .advantages-section__title,
 .procedures-section__title,
-.contact-section__title {
+.contact-section__title,
+.modal-form__title {
   font-family: Play;
   font-size: 64px;
   font-weight: 700;
@@ -455,6 +462,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
+  overflow: hidden;
 }
 
 .carousel-card {
@@ -521,7 +529,6 @@ body {
   align-items: center;
   gap: 32px;
   max-width: 422px;
-  /* height: 482px; */
   padding: 48px 56px;
   border-radius: 32px;
   background-color: var(--color-primary-dark-blue);
@@ -551,8 +558,6 @@ body {
   width: 100%;
 }
 
-.input__label {
-}
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -583,7 +588,8 @@ body {
   align-items: center;
 }
 
-.appointment-form__btn {
+.appointment-form__btn,
+.modal-form__btn {
   color: var(--color-primary-white);
   background: var(--color-primary-light-blue);
   padding: 14px 30px;
@@ -596,13 +602,15 @@ body {
   transition: all 0.2s;
 }
 
-.appointment-form__btn:hover {
+.appointment-form__btn:hover,
+.modal-form__btn:hover {
   color: var(--color-primary-light-blue);
   background-color: transparent;
   border: 2px solid var(--color-primary-light-blue);
 }
 
-.appointment-form__btn-description {
+.appointment-form__btn-description,
+.modal-form__btn-description {
   color: var(--color-secondary-light-grey);
   font-size: 12px;
   line-height: 150%;
@@ -681,4 +689,65 @@ body {
 .footer__copy {
   color: var(--color-secondary-light-grey);
   font-size: 13px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 172px;
+  background-color: rgba(1, 31, 74, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modal__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 722px;
+  height: 100%;
+  padding: 42px 206px;
+  border-radius: 48px;
+  background-color: var(--color-primary-dark-blue);
+  background-image: url("../images/modal-form_bg-texture.svg");
+  background-size: auto;
+  color: var(--color-primary-white);
+}
+
+.modal-form__btn-close {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  fill: transparent;
+  stroke: var(--color-primary-white);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-form__title {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.modal-form-input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-form__input {
+  position: relative;
+  width: 100%;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
