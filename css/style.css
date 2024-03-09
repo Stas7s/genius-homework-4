@@ -162,10 +162,11 @@ body {
 /* hero-section */
 
 .hero-section {
+  max-height: 687px;
   padding-top: 122px;
   padding-bottom: 126px;
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
+  background-image: url("../images/hero-bg.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -222,7 +223,6 @@ body {
 /* about-section */
 
 .about-section {
-  padding-top: 44px;
   padding-bottom: 176px;
 }
 
