@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  background-color: var(--color-primary-dark-blue);
+  background-image: url("../images/footer_bg-texture.svg");
+  padding: 56px 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100%;
+  }
+  &__logo {
+    width: 78px;
+  }
+
+  &__menu,
+  &__contacts,
+  &__contacts-list,
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__menu-link,
+  &__contacts-link {
+    color: var(--color-primary-white);
+    font-size: 16px;
+    transition: all 0.2s;
+  }
+
+  &__contacts-link {
+    font-style: normal;
+  }
+
+  &__menu-link:hover,
+  &__contacts-link:hover {
+    color: var(--color-primary-light-blue);
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+  }
+
+  &__social-icon {
+    fill: var(--color-primary-white);
+    transition: all 0.2s;
+  }
+
+  &__social-icon:hover {
+    fill: var(--color-primary-light-blue);
+  }
+
+  &__copy {
+    color: var(--color-secondary-light-grey);
+    font-size: 13px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

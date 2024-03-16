@@ -1,0 +1,30 @@
+.button {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light-blue);
+  border: 2px solid var(--color-primary-light-blue);
+  padding: 14px 30px;
+  border-radius: 32px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-primary-light-blue);
+    background-color: transparent;
+    border: 2px solid var(--color-primary-light-blue);
+  }
+
+  &__description {
+    color: var(--color-secondary-light-grey);
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &__description-link {
+    color: var(--color-secondary-light-grey);
+    text-decoration: underline;
+  }
+}

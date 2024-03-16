@@ -1,0 +1,46 @@
+.hero-section {
+  max-height: 687px;
+  padding-top: 122px;
+  padding-bottom: 126px;
+  background-image: url("../images/hero-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &__title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  &__title span {
+    display: block;
+    margin-top: 16px;
+    font-family: Play;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 81%;
+    color: var(--color-primary-light-blue);
+    text-transform: capitalize;
+  }
+
+  &__button {
+    margin-bottom: 14px;
+  }
+
+  &__button:hover {
+    color: var(--color-primary-dark-blue);
+    background-color: transparent;
+    border: 2px solid var(--color-primary-light-blue);
+  }
+
+  &__button-description {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-secondary-dark-grey);
+    max-width: 220px;
+  }
+}

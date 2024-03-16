@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Zone</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-container">
+            <div class="header__container">
                 <a href="index.html">
                     <img class="header__logo" src="images/BeautyZone_logo.svg" alt="logo Beauty Zone">
                 </a>
@@ -61,8 +61,9 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-section__title">Косметологічна клініка<br><span>beauty<br>zone</span></h1>
-                <button class="hero-section__btn modal-btn-open" type="button">Замовити дзвінок</button>
-                <p class="hero-section__btn-description">Запишись та отримай безкоштовну консультацію нашого косметолога
+                <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
+                <p class="hero-section__button-description">Запишись та отримай безкоштовну консультацію нашого
+                    косметолога
                 </p>
             </div>
         </section>
@@ -70,10 +71,11 @@
             <div class="container">
                 <div class="about-section__container">
                     <div class="about-section__content">
-                        <h2 class="about-section__title">Перевтілюйтесь<br>в <span>beauty zone!</span></h2>
+                        <h2 class="section-title">Перевтілюйтесь<br>в <span>Beauty Zone!</span>
+                        </h2>
                         <p class="about-section__text">Наша косметологічна клініка пропонує вам професійні послуги з
                             догляду за шкірою обличчя та тіла.</p>
-                        <p class="about-section__text">B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості
+                        <p class="about-section__text">B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості
                             та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати
                             свою красу тамолодість. З нами краса назавжди!</p>
                     </div>
@@ -86,39 +88,37 @@
         </section>
         <section class="advantages-section" id="advantages-section">
             <div class="container">
-                <h2 class="advantages-section__title">Чому люди<br><span>обирають нас</span></h2>
-                <div class="carousel__container">
-                    <ul class="advantages-section__list">
-                        <li class="advantages-section__item">
-                            <svg class="advantages__icon" width="48" height="48">
-                                <use href="./images/icons.svg#icon-science"></use>
-                            </svg>
-                            <p class="advantages-section__text">Всі наші косметологи мають вищу медичну освіту та стаж
-                                роботи
-                                від 5 років</p>
-                        </li>
-                        <li class="advantages-section__item">
-                            <svg class="advantages__icon" width="48" height="48">
-                                <use href="./images/icons.svg#icon-bottles"></use>
-                            </svg>
-                            <p class="advantages-section__text">Використовуємо тільки професійне обладнання та
-                                косметику,
-                                перевірену часом</p>
-                        </li>
-                        <li class="advantages-section__item">
-                            <svg class="advantages__icon" width="48" height="48">
-                                <use href="./images/icons.svg#icon-crown"></use>
-                            </svg>
-                            <p class="advantages-section__text">Наша мета - підкреслити переваги та приховати недоліки,
-                                а не переробити</p>
-                        </li>
-                    </ul>
-                </div>
+                <h2 class="section-title advantages-section__title">Чому люди<br><span>обирають нас</span></h2>
+                <ul class="advantages-section__list">
+                    <li class="advantages-section__item">
+                        <svg class="advantages-section__icon" width="48" height="48">
+                            <use href="./images/icons.svg#icon-science"></use>
+                        </svg>
+                        <p class="advantages-section__text">Всі наші косметологи мають вищу медичну освіту та стаж
+                            роботи
+                            від 5 років</p>
+                    </li>
+                    <li class="advantages-section__item">
+                        <svg class="advantages-section__icon" width="48" height="48">
+                            <use href="./images/icons.svg#icon-bottles"></use>
+                        </svg>
+                        <p class="advantages-section__text">Використовуємо тільки професійне обладнання та
+                            косметику,
+                            перевірену часом</p>
+                    </li>
+                    <li class="advantages-section__item">
+                        <svg class="advantages-section__icon" width="48" height="48">
+                            <use href="./images/icons.svg#icon-crown"></use>
+                        </svg>
+                        <p class="advantages-section__text">Наша мета - підкреслити переваги та приховати недоліки,
+                            а не переробити</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="procedures-section" id="procedures-section">
             <div class="container">
-                <h2 class="procedures-section__title">Наші <span>процедури</span></h2>
+                <h2 class="section-title procedures-section__title">Наші <span>процедури</span></h2>
                 <div class="procedures-section__carousel">
                     <button class="carousel__button carousel__button-prev" type="button">
                         <svg width="18" height="15">
@@ -163,7 +163,7 @@
         </section>
         <section class="contact-section" id="contact-section">
             <div class="container">
-                <h2 class="contact-section__title">Як нас <span>знайти</span></h2>
+                <h2 class="section-title contact-section__title">Як нас <span>знайти</span></h2>
                 <div class="contact-section__container">
                     <iframe class="contact-section__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1703418470309!5m2!1sru!2sua"
@@ -171,28 +171,28 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <form class="appointment-form" method="post" action="input">
-                        <h3 class="appointment-form__title">Запишіться <span>безкоштовно</span> та отримайте подарунок
+                        <h3 class="form-title">Запишіться <span>безкоштовно</span> та отримайте подарунок
                         </h3>
                         <div class="form-input__container">
-                            <div class="appointmet-form__input">
+                            <div class="input">
                                 <label class="input__label visually-hidden" for="user-name">Ім'я та прізвище</label>
                                 <input class="input__field" id="user-name" type="text" name="name"
                                     placeholder="Ваше ім'я та прізвище" required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
                             </div>
-                            <div class="appointmet-form__input">
+                            <div class="input">
                                 <label class="input__label visually-hidden" for="user-tel">Телефон</label>
                                 <input class="input__field" id="user-tel" type="tel" name="tel"
                                     placeholder="Ваш номер телефону" required pattern="^\+[0-9]{12}">
                             </div>
-                            <div class="appointmet-form__input">
+                            <div class="input">
                                 <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
                                 <input class="input__field" id="user-email" type="email" name="email"
                                     placeholder="Ваша електронна пошта" required>
                             </div>
                             <div class="form-button__container">
-                                <button class="appointment-form__btn" type="submit">Записатись безкоштовно</button>
-                                <p class="appointment-form__btn-description">Натискаючи на кнопку я погоджуюсь
-                                    <a class="btn-description__link" href="#">з політикою конфіденційності</a>
+                                <button class="button" type="submit">Записатись безкоштовно</button>
+                                <p class="button__description">Натискаючи на кнопку я погоджуюсь
+                                    <a class="button__description-link" href="#">з політикою конфіденційності</a>
                                 </p>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                     </ul>
                 </nav>
                 <address class="footer__contacts">
-                    <ul class="contacts__list">
+                    <ul class="footer__contacts-list">
                         <li class="contacts__item">
                             <a class="footer__contacts-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
                         </li>
@@ -235,9 +235,7 @@
                         </li>
                         <li class="contacts__item">
                             <a class="footer__contacts-link" href="https://maps.app.goo.gl/f5roskzKXoE4J4bq9"
-                                target="_blank">Україна, м.
-                                Київ, <br> вул. Тараса
-                                Шевченка 5</a>
+                                target="_blank">Україна, м. Київ, <br> вул. Тараса Шевченка 5</a>
                         </li>
                     </ul>
                     <ul class="footer__social-list">
@@ -275,34 +273,34 @@
 
     <div class="modal is-hidden">
         <form class="modal__form" method="post" action="input">
-            <button class="modal-form__btn-close modal-btn-close" type="button">
+            <button class="modal__btn-close modal-btn-close" type="button">
                 <svg width="18" height="18">
                     <use href="images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="modal-form__title">Замовити дзвінок</h2>
-            <h3 class="appointment-form__title">Запишіться <span>безкоштовно</span> та отримайте подарунок
+            <h2 class="section-title modal__title">Замовити дзвінок</h2>
+            <h3 class="form-title">Запишіться <span>безкоштовно</span> та отримайте подарунок
             </h3>
             <div class="modal-form-input__container">
-                <div class="modal-form__input">
+                <div class="input">
                     <label class="input__label visually-hidden" for="user-name">Ім'я та прізвище</label>
                     <input class="input__field" id="user-name" type="text" name="name"
                         placeholder="Ваше ім'я та прізвище" required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
                 </div>
-                <div class="modal-form__input">
+                <div class="input">
                     <label class="input__label visually-hidden" for="user-tel">Телефон</label>
                     <input class="input__field" id="user-tel" type="tel" name="tel" placeholder="Ваш номер телефону"
                         required pattern="^\+[0-9]{12}">
                 </div>
-                <div class="modal-form__input">
+                <div class="input">
                     <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
                     <input class="input__field" id="user-email" type="email" name="email"
                         placeholder="Ваша електронна пошта" required>
                 </div>
                 <div class="form-button__container">
-                    <button class="modal-form__btn" type="submit">Записатись безкоштовно</button>
-                    <p class="modal-form__btn-description">Натискаючи на кнопку я погоджуюсь
-                        <a class="btn-description__link" href="#">з політикою конфіденційності</a>
+                    <button class="button" type="submit">Записатись безкоштовно</button>
+                    <p class="button__description">Натискаючи на кнопку я погоджуюсь
+                        <a class="button__description-link" href="#">з політикою конфіденційності</a>
                     </p>
                 </div>
             </div>

@@ -1,0 +1,25 @@
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 422px;
+  padding: 48px 56px;
+  border-radius: 32px;
+  background-color: var(--color-primary-dark-blue);
+  background-image: url("../images/contact-form_bg-texture.svg");
+  color: var(--color-primary-white);
+}
+
+.form-input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-button__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}

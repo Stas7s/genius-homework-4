@@ -1,0 +1,22 @@
+.contact-section {
+  padding-bottom: 96px;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 48px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  &__map {
+    flex-grow: 1;
+    border-radius: 32px;
+  }
+}
