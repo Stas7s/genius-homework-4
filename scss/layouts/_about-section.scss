@@ -1,13 +1,12 @@
 .about-section {
-  padding-bottom: 24px;
-
+  padding-bottom: 20px;
   &__container {
     display: flex;
     position: relative;
   }
 
   &__container::before {
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-laptop) {
       position: absolute;
       background-image: url("../images/Star_middle.svg");
       background-repeat: no-repeat;
@@ -41,7 +40,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-laptop) {
       width: 64px;
       height: 64px;
       bottom: 284px;
@@ -96,7 +95,7 @@
   &__photo-container {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-laptop) {
       display: flex;
       flex-direction: column;
       gap: 40px;

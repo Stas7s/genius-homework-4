@@ -229,7 +229,7 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .section-title {
     font-size: 64px;
   }
@@ -239,7 +239,7 @@ body {
 }
 
 .about-section {
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
 .about-section__container {
   display: -webkit-box;
@@ -247,7 +247,7 @@ body {
   display: flex;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .about-section__container::before {
     position: absolute;
     background-image: url("../images/Star_middle.svg");
@@ -291,7 +291,7 @@ body {
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .about-section__container::after {
     width: 64px;
     height: 64px;
@@ -357,7 +357,7 @@ body {
 .about-section__photo-container {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .about-section__photo-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -426,15 +426,18 @@ body {
       align-self: flex-end;
 }
 
-.advantages-section {
-  padding-top: 108px;
-  padding-bottom: 40px;
-  position: relative;
-  background: url("../images/advantages-bg.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(33%, rgba(43, 127, 255, 0.15)), color-stop(68%, rgba(43, 127, 255, 0.1)), to(rgba(43, 127, 255, 0)));
-  background: url("../images/advantages-bg.svg"), linear-gradient(transparent, rgba(43, 127, 255, 0.15) 33%, rgba(43, 127, 255, 0.1) 68%, rgba(43, 127, 255, 0) 100%);
+.adventages-procedures-wrapper {
+  background: url("../images/advantages-bg.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(33%, rgba(43, 127, 255, 0.15)), color-stop(68%, rgba(43, 127, 255, 0.1)), color-stop(90%, rgb(255, 255, 255)));
+  background: url("../images/advantages-bg.svg"), linear-gradient(transparent, rgba(43, 127, 255, 0.15) 33%, rgba(43, 127, 255, 0.1) 68%, rgb(255, 255, 255) 90%);
   background-position: top 0px center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.advantages-section {
+  padding-top: 148px;
+  padding-bottom: 40px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .advantages-section {
@@ -446,7 +449,7 @@ body {
   margin-bottom: 24px;
   text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .advantages-section__title {
     margin-bottom: 48px;
   }
@@ -927,8 +930,13 @@ body {
   padding-bottom: 96px;
 }
 .procedures-section__title {
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .procedures-section__title {
+    padding-bottom: 48px;
+  }
 }
 .procedures-section__carousel {
   display: -webkit-box;
