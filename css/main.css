@@ -92,7 +92,7 @@ body {
   background-image: url("../images/advantages-bg.svg");
   background-position: top 1320px center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .appointment-form {
@@ -643,10 +643,10 @@ body {
 }
 
 .hero-section {
-  max-height: 300px;
   padding-top: 70px;
   padding-bottom: 56px;
-  background-image: url("../images/hero-bg.png");
+  background: -webkit-gradient(linear, left bottom, right top, from(transparent), color-stop(0%, rgb(255, 255, 255)), color-stop(31%, rgba(255, 255, 255, 0.78)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(68%, rgba(255, 255, 255, 0))), url("../images/hero-bg.png");
+  background: linear-gradient(to top right, transparent, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 68%), url("../images/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -654,7 +654,11 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("../images/hero-bg@2x.png");
+    background: -webkit-gradient(linear, left bottom, right top, from(transparent), color-stop(0%, rgb(255, 255, 255)), color-stop(31%, rgba(255, 255, 255, 0.78)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(68%, rgba(255, 255, 255, 0))), url("../images/hero-bg@2x.png");
+    background: linear-gradient(to top right, transparent, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 68%), url("../images/hero-bg@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -701,6 +705,11 @@ body {
   .hero-section__title span {
     margin-top: 16px;
     font-size: 140px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-section__title span br {
+    display: none;
   }
 }
 .hero-section__button {
