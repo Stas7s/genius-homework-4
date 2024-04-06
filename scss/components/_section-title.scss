@@ -1,8 +1,13 @@
 .section-title {
   font-family: Play;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: $bp-laptop) {
+    font-size: 64px;
+  }
+
   & span {
     color: var(--color-primary-light-blue);
   }

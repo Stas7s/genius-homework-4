@@ -1,5 +1,5 @@
 .about-section {
-  padding-bottom: 176px;
+  padding-bottom: 24px;
 
   &__container {
     display: flex;
@@ -7,20 +7,22 @@
   }
 
   &__container::before {
-    position: absolute;
-    background-image: url("../images/Star_middle.svg");
-    background-repeat: no-repeat;
-    fill: var(--color-primary-light-blue);
-    transform: rotate(30deg);
-    width: 40px;
-    height: 40px;
-    top: 38px;
-    right: -21px;
-    content: "";
-    animation-name: flickering;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      background-image: url("../images/Star_middle.svg");
+      background-repeat: no-repeat;
+      fill: var(--color-primary-light-blue);
+      transform: rotate(30deg);
+      width: 40px;
+      height: 40px;
+      top: 38px;
+      right: -21px;
+      content: "";
+      animation-name: flickering;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
   }
 
   &__container::after {
@@ -29,15 +31,22 @@
     background-repeat: no-repeat;
     fill: var(--color-secondary-dark-blue);
     transform: rotate(-30deg);
-    width: 64px;
-    height: 64px;
-    top: 347px;
-    right: 304px;
+    width: 40px;
+    height: 40px;
+    bottom: -50px;
+    right: 22px;
     content: "";
     animation-name: flickering;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 64px;
+      height: 64px;
+      bottom: 284px;
+      right: 304px;
+    }
   }
 
   @keyframes flickering {
@@ -52,15 +61,31 @@
     }
   }
 
-  &__content,
-  &__text {
-    padding-top: 40px;
-    flex-basis: 60%;
+  &__content {
+    padding-top: 0;
+
+    @media screen and (min-width: $bp-laptop) {
+      padding-top: 40px;
+      flex-basis: 60%;
+    }
   }
 
   &__text {
-    font-size: 22px;
-    line-height: 38px;
+    padding-top: 24px;
+
+    @media screen and (min-width: $bp-laptop) {
+      padding-top: 40px;
+      flex-basis: 60%;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 38px;
+    }
   }
 
   &__text span {
@@ -69,10 +94,15 @@
   }
 
   &__photo-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    flex-basis: 40%;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      flex-basis: auto;
+      flex-basis: 40%;
+    }
   }
 
   &__photo {
