@@ -102,13 +102,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 32px;
-  max-width: 422px;
-  padding: 48px 56px;
+  gap: 24px;
+  max-width: 320px;
+  padding: 42px 24px;
   border-radius: 32px;
   background-color: var(--color-primary-dark-blue);
   background-image: url("../images/contact-form_bg-texture.svg");
   color: var(--color-primary-white);
+}
+@media screen and (min-width: 768px) {
+  .appointment-form {
+    gap: 32px;
+    max-width: 422px;
+    padding: 48px 56px;
+  }
 }
 
 .form-input__container {
@@ -192,11 +199,16 @@ body {
   width: 100%;
 }
 .input__field {
-  padding: 16px 32px;
+  padding: 14px 22px;
   background-color: transparent;
   border-radius: 32px;
   border: 2px solid var(--color-secondary-light-grey);
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .input__field {
+    padding: 16px 32px;
+  }
 }
 .input__field:focus {
   background-color: var(--color-secondary-light-grey);
@@ -508,13 +520,22 @@ body {
 }
 .contact-section__title {
   text-align: center;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .contact-section__title {
+    padding-bottom: 48px;
+  }
 }
 .contact-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -522,13 +543,36 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1060px;
-  margin: 0 auto;
+  margin: 0 -20px;
+}
+@media screen and (min-width: 768px) {
+  .contact-section__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 32px;
+  }
 }
 .contact-section__map {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border-radius: 32px;
+  width: 100%;
+  height: 232px;
+  border-radius: 0px;
+  margin: 0 -20px;
+}
+@media screen and (min-width: 768px) {
+  .contact-section__map {
+    width: 50%;
+    height: 467px;
+    border-radius: 32px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-section__map {
+    width: 605px;
+    height: 480px;
+  }
 }
 
 .container {
