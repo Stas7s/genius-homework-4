@@ -952,6 +952,11 @@ body {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
+@media screen and (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .mobile-menu.is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
