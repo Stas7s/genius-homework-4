@@ -14,6 +14,14 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+    width: 100%;
+  }
+
+  .carousel__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
   }
 
   .carousel__button {
@@ -51,9 +59,12 @@
 
   .carousel__list {
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    overflow: hidden;
+    justify-content: space-between;
+    max-width: 1064px;
+  }
+
+  .carousel__item {
+    flex-basis: content;
   }
 
   .carousel-card {
@@ -87,5 +98,26 @@
       text-align: center;
       color: var(--color-primary-white);
     }
+  }
+
+  .carousel__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    background: var(--color-secondary-light-grey);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    width: 11px;
+    height: 11px;
+    background: var(--color-primary-light-blue);
   }
 }

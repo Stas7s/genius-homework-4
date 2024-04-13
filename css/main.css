@@ -444,8 +444,6 @@ body {
   background-position: top 0px center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  z-index: -1;
 }
 
 .advantages-section {
@@ -1087,6 +1085,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 32px;
+  width: 100%;
+}
+.procedures-section .carousel__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  margin: 0;
 }
 .procedures-section .carousel__button {
   display: -webkit-box;
@@ -1130,11 +1140,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 16px;
-  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1064px;
+}
+.procedures-section .carousel__item {
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
 }
 .procedures-section .carousel-card {
   display: -webkit-box;
@@ -1167,4 +1180,27 @@ body {
   font-weight: 400;
   text-align: center;
   color: var(--color-primary-white);
+}
+.procedures-section .carousel__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+.procedures-section .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background: var(--color-secondary-light-grey);
+  opacity: 1;
+}
+.procedures-section .swiper-pagination-bullet-active {
+  width: 11px;
+  height: 11px;
+  background: var(--color-primary-light-blue);
 }/*# sourceMappingURL=main.css.map */
