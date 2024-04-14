@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   slidesPerView: 3,
+  slidesPerGroup: 3,
   spaceBetween: 16,
   // If we need pagination
   pagination: {
